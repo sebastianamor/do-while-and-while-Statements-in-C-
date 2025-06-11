@@ -1,17 +1,16 @@
-﻿Random random = new Random();
-int current = random.Next(1, 12);
-
-/*
-do
+﻿while (true) // Bucle infinito aparente
 {
-    current = random.Next(1, 11);
-    Console.WriteLine(current);
-} while (current != 7);
-*/
-
-while (current >= 3)
-{
-    Console.WriteLine(current);
-    current = random.Next(1, 12);
+    var resultado = ProcesarDatos();
+    
+    if (resultado.EsExitoso)
+    {
+        Console.WriteLine("Proceso completado");
+        break; // Salida controlada
+    }
+    
+    if (resultado.Intentos > 3)
+    {
+        Console.WriteLine("Demasiados intentos");
+        break;
+    }
 }
-Console.WriteLine($"Last number: {current}");
