@@ -1,5 +1,5 @@
 ﻿Random random = new Random();
-int current = random.Next(1, 11);
+int current = random.Next(1, 12);
 
 /*
 do
@@ -12,6 +12,6 @@ do
 while (current >= 3)
 {
     Console.WriteLine(current);
-    current = random.Next(1, 11);
+    current = random.Next(1, 12);
 }
 Console.WriteLine($"Last number: {current}");
