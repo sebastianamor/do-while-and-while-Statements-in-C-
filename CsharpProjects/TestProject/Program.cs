@@ -5,10 +5,11 @@ int i = 0;
 
 do
 {
+    Console.WriteLine($" Contador: {i}, Monstruos: {monster}, Héroes: {hero}");
     Console.WriteLine("\npelea:");
     Console.WriteLine("1. pegar");
     Console.WriteLine("2. daño");
-    Console.WriteLine("3. Repetir");
+    Console.WriteLine("3. cubrirse");
     Console.WriteLine("4. Salir");
     
     if (!int.TryParse(Console.ReadLine(), out opcion))
